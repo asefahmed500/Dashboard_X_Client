@@ -107,7 +107,7 @@ export const router = createBrowserRouter([
           console.log('Fetching task with ID:', id);
 
           const token = localStorage.getItem('access-token'); // Or wherever you store your token
-          const response = await fetch(`http://localhost:5000/tasks/${id}`, {
+          const response = await fetch(`https://dashboard-x-server.onrender.com/tasks/${id}`, {
             headers: {
               Authorization: `Bearer ${token}`, // Include the token in the header
               'Content-Type': 'application/json',
